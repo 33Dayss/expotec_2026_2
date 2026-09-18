@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte Interativa com RA</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">Galeria RA</div>
+    <nav>
+      <ul>
+        <li><a href="#qr-section">Acessar RA</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#visor">Visor</a></li>
+        <li><a href="#entregaveis">Entregáveis</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Galeria de Arte Interativa com Realidade Aumentada</h1>
+    <p>Aponte a câmera do celular para um quadro do estande e veja um modelo 3D aparecer sobre a imagem, direto no navegador, sem precisar instalar nenhum aplicativo.</p>
+    <a class="btn" href="#qr-section">Experimentar Agora</a>
+  </div>
+</section>
+
+<section id="qr-section" class="qr-section">
+  <div class="container">
+    <div class="qr-content">
+      <h2>Acesse a Experiência em RA</h2>
+      <p>Escaneie o QR Code abaixo com a câmera do seu celular para abrir o visor de Realidade Aumentada. Se já estiver no celular, clique no botão.</p>
+      <div class="qr-box">
+        <img src="qrcode.png" alt="QR Code para acessar a Câmera RA">
+      </div>
+      <a class="btn btn-primary" href="ar.html">Abrir Câmera RA Direto</a>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <div class="container">
+    <h2>Como funciona</h2>
+    <p class="section-desc">A aplicação usa reconhecimento de imagem (image tracking) para identificar os quadros e ancorar o conteúdo 3D sobre eles.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Apontar a câmera</h3>
+        <p>O visitante acessa o site pelo navegador do celular e aponta a câmera para um dos quadros expostos.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Reconhecer o marcador</h3>
+        <p>A biblioteca MindAR.js identifica os pontos de interesse da imagem e calcula a posição do quadro na tela.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Mostrar o modelo 3D</h3>
+        <p>Um arquivo .glb é carregado com A-Frame/Three.js e aparece sobre o quadro, junto com um painel de informações em HTML.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="container">
+    <h2>Galeria</h2>
+    <p class="section-desc">Quadros e pôsteres que serão impressos e usados como marcadores nas paredes do estande.</p>
+    <div class="gallery">
+      <div class="card">
+        <div class="card-image">imagem do quadro 1</div>
+        <div class="card-info">
+          <h3>Vale Suspenso</h3>
+          <p>Marcador para modelo 3D de paisagem.</p>
+          <span class="tag">RA disponível</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">imagem do quadro 2</div>
+        <div class="card-info">
+          <h3>Correnteza Norte</h3>
+          <p>Marcador para animação de água.</p>
+          <span class="tag">RA disponível</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">imagem do quadro 3</div>
+        <div class="card-info">
+          <h3>Retrato em Camadas</h3>
+          <p>Marcador para modelo 3D de rosto.</p>
+          <span class="tag">RA disponível</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">imagem do quadro 4</div>
+        <div class="card-info">
+          <h3>Campo Dourado</h3>
+          <p>Marcador para animação de plantas.</p>
+          <span class="tag">RA disponível</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">imagem do quadro 5</div>
+        <div class="card-info">
+          <h3>Ponte de Ferro</h3>
+          <p>Marcador para modelo 3D arquitetônico.</p>
+          <span class="tag">RA disponível</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">imagem do quadro 6</div>
+        <div class="card-info">
+          <h3>Céu Noturno</h3>
+          <p>Marcador para animação de estrelas.</p>
+          <span class="tag">RA disponível</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visor">
+  <div class="container">
+    <h2>Visor de RA</h2>
+    <p class="section-desc">Simulação de como a tela do celular vai mostrar o modelo 3D e o painel de informações sobre o quadro.</p>
+    <div class="viewer">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="phone-camera-area"></div>
+          <div class="phone-model"></div>
+          <div class="phone-panel">
+            <div class="tag-label">painel informativo</div>
+            <h4>Vale Suspenso, 2024</h4>
+            <p>Técnica mista sobre tela.</p>
+          </div>
+        </div>
+      </div>
+      <div class="viewer-text">
+        <p>O visor funciona direto no navegador, usando a câmera do dispositivo.</p>
+        <ul>
+          <li>Sem necessidade de instalar aplicativo.</li>
+          <li>Reconhecimento do quadro com MindAR.js / AR.js.</li>
+          <li>Renderização do modelo 3D com A-Frame ou Three.js.</li>
+          <li>Painel informativo em HTML sobreposto à cena.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="entregaveis" class="no-border">
+  <div class="container">
+    <h2>Entregáveis do projeto</h2>
+    <ul class="list-simple">
+      <li>
+        <span class="check">✓</span>
+        <div>
+          <h3>Aplicação WebAR</h3>
+          <p>Site que reconhece os marcadores e mostra os modelos 3D pelo navegador.</p>
+        </div>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <div>
+          <h3>Quadros e pôsteres físicos</h3>
+          <p>Impressos para colocar nas paredes do estande e usar como marcadores.</p>
+        </div>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <div>
+          <h3>Painéis informativos</h3>
+          <p>Textos em HTML que aparecem sobre a animação 3D com dados da obra.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Projeto de Galeria de Arte Interativa com RA — HTML, CSS, JavaScript, MindAR.js, A-Frame
+  </div>
+</footer>
+
+</body>
+</html>
